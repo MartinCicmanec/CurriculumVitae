@@ -1,11 +1,39 @@
-\documentclass{article}
+\documentclass[10pt]{article}
+\usepackage{array, xcolor, bibentry}
+\usepackage[margin=1cm]{geometry}
 
-\title{My first document}
-\date{18-01-2022}
-\author{Martin Čičmanec}
+\title{\bfseries\Huge Martin Čičmanec}
+\author{martin.cicmanec.47@gmail.com}
+\date{}
+
+\definecolor{lightgray}{gray}{0.8}
+\newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 \begin{document}
-    \pagenumbering{gobble}
-    \maketitle
-    Hello World!
+\maketitle
+\begin{minipage}[ht]{0.48\textwidth}
+Pod Drinopolem 1660/2\\
+Praha 6\\
+Czech Republic
+\end{minipage}
+\begin{minipage}[ht]{0.48\textwidth}
+Praha\\
+\date{10-12-2022}\\
++421 948 725 688
+\end{minipage}
+\vspace{20pt}
+
+\section*{Objective}
+Find a job.
+
+\section*{Professional Experience}
+\begin{tabular}{L!{\VRule}R}
+1.11.2016--today&{\bf Work at company XY.}\\
+6 years a slave\\
+\end{tabular}
+
+\pagenumbering{gobble}
+
 \end{document}
