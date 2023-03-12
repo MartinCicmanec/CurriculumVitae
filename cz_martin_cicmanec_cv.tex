@@ -2,6 +2,15 @@
 \usepackage{array, xcolor, bibentry}
 \usepackage[margin=1cm]{geometry}
 \usepackage{hyperref}
+\usepackage{ragged2e}
+
+\pdfinfo{
+   /Author (Martin Čičmanec)
+   /Title  (Curriculum Vitae)
+   /CreationDate (D:20230228195600)
+   /Subject (CV for job applications)
+   /Keywords (PDF;LaTeX;CV;IT;Python;Linux)
+}
 
 \title{\bfseries\Huge CV - Martin Čičmanec}
 \author{martin.cicmanec.47@gmail.com}
@@ -9,54 +18,62 @@
 
 \definecolor{lightgray}{gray}{0.8}
 \newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
-\newcolumntype{R}{p{0.8\textwidth}}
+\newcolumntype{R}{p{0.9\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 \begin{document}
 \maketitle
 \begin{minipage}[ht]{0.48\textwidth}
-Pod Drinopolem 1660/2\\
-Praha 6\\
-Czech Republic
+    Pod Drinopolem 1660/2\\
+    Praha 6\\
+    Czech Republic
 \end{minipage}
 \begin{minipage}[ht]{0.48\textwidth}
-Praha\\
-\date{20-02-2023}\\
-+421 948 725 688
+    \raggedleft
+    Praha\\
+    \date{28.02.2023}\\
+    +421 948 725 688
 \end{minipage}
 \vspace{20pt}
 
-\section*{Summary}
-    For tha past six years, I worked on many projects, from PLC programming, robot programming to
-    designing a complete Python system running inference on an Edge PC. This was done in a small
-    startup company but I feel it is time to move on and tackle new challenges.
-
-\section*{Education}
+\section*{Vzdělání}
 \begin{tabular}{L!{\VRule}R}
-    2010 -- 2013&Left Physiscs at MFF UK in second year.\\
-    2013 -- 2016&Expelled after failing subject in sixth semester at FEL ČVUT.\\
+    2010 -- 2013&(Nedokončeno) MFF UK, Fyzika - Studium zanecháno ve druhém ročníku.\\
+    2013 -- 2016&(Nedokončeno) ČVUT FEL, Otevřená Informatika - Nesplnění podmínek k zápočtu v šestém semestru,\\
+    &ukončení studia.\\
 \end{tabular}
 
-\section*{Professional Experience}
+\section*{Profesionální zkušenosti}
 \begin{tabular}{L!{\VRule}R}
-    1.11.2016 -- today&{\bf Python developer at Optisolutions s.r.o.}\\[5pt]
-    &Mainly experienced with python, bash, linux, docker, Universal Robots programming,\\
-    &Siemens TIA Portal programming and automation.\\
-    &Beginner at Torch, ROS and PostgreSQL\\
+    4.2015 -- 6.2016 &{\bf Junior JAVA Developer ve firmě Certicon.}\\
+    &Brigáda popři studiu. Převažně JAVA programování.\\[5pt]
+    11.2016 -- today&{\bf Python vývojář ve firmě Optisolutions s.r.o.}\\
+    &Především zkušenosti s Python, Bash, Linux, Docker, Universal Robots programování,\\
+    &Siemens TIA Portal programování a automatizace.\\
+    &Začátečník s Torch, ROS a PostgreSQL\\[5pt]
 \end{tabular}
 
-\section*{Big projects worked on}
+\section*{Zajímavé předchozí projekty}
+\hfill\begin{minipage}{\dimexpr\textwidth-2em}
+    Vision system for Production Cell 4.0 (\href{https://youtu.be/bp4fXCKxH9c}{https://youtu.be/bp4fXCKxH9c})\\
+    Magic Eye preventative maintenance (\href{https://youtu.be/OJSRanzvh8g}{https://youtu.be/OJSRanzvh8g})\\
+\end{minipage}
+
+\section*{Jazyky}
 \begin{tabular}{L!{\VRule}R}
-    &\href{https://www.youtube.com/watch?v=OJSRanzvh8g}{Magic Eye preventative maintenance}\\
-    &\href{https://www.youtube.com/watch?v=bp4fXCKxH9c}{Vision system for Production Cell 4.0}\\
+    Slovenčina&rodný jazyk\\
+    Čeština&samouk\\
+    English&B2\\
+    Němčina&B1\\
 \end{tabular}
 
-\section*{Languages}
-\begin{tabular}{L!{\VRule}R}
-    Slovak&(mother tongue)\\
-    English&Fluent (B2)\\
-    German&Fluent (B2)\\
-\end{tabular}
+\section*{Shrnutí}
+\hfill\begin{minipage}{\dimexpr\textwidth-2em}
+    Posledních 6 let jsem pracoval narůzných projektech, od průmyslové automatizace, přes řízení\\
+    šestiosých robotů až po návrh a implementaci Python EdgePC systému pro inferenci.\\
+    Preferuji programování v jazyku Python a v systému Linux. Musel jsem se však několik krát\\
+    za krátkou dobu naučit pracovat v novém jazyce/systému.\\
+\end{minipage}
 
 \pagenumbering{gobble}
 

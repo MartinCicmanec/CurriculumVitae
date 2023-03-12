@@ -2,7 +2,15 @@
 \usepackage{array, xcolor, bibentry}
 \usepackage[margin=1cm]{geometry}
 \usepackage{hyperref}
+\usepackage{ragged2e}
 
+\pdfinfo{
+   /Author (Martin Čičmanec)
+   /Title  (Curriculum Vitae)
+   /CreationDate (D:20230228195600)
+   /Subject (CV for job applications)
+   /Keywords (PDF;LaTeX;CV;IT;Python;Linux)
+}
 
 \title{\bfseries\Huge CV - Martin Čičmanec}
 \author{martin.cicmanec.47@gmail.com}
@@ -16,52 +24,56 @@
 \begin{document}
 \maketitle
 \begin{minipage}[ht]{0.48\textwidth}
-Pod Drinopolem 1660/2\\
-Praha 6\\
-Czech Republic
+    Pod Drinopolem 1660/2\\
+    Praha 6\\
+    Czech Republic
 \end{minipage}
 \begin{minipage}[ht]{0.48\textwidth}
-Praha\\
-\date{20.02.2023}\\
-+421 948 725 688
+    \raggedleft
+    Praha\\
+    \date{28.02.2023}\\
+    +421 948 725 688
 \end{minipage}
 \vspace{20pt}
 
-\section*{Summary}
-\hfill\begin{minipage}{\dimexpr\textwidth-2em}
-For tha past six years, I worked on many projects, from PLC programming, six-axis robot arm programming
-to designing the majority of a Python system running inference on an Edge PC. This was done in a small
-startup company but I feel it is time to move on and tackle new challenges.
-\end{minipage}
 
 \section*{Education}
 \begin{tabular}{L!{\VRule}R}
-2010 -- 2013&(Unfinished) Left Physiscs at MFF UK in second grade.\\
-2013 -- 2016&(Unfinished) Expelled after failing subject in sixth semester at FEL ČVUT.\\
+    2010 -- 2013&(Unfinished) Left Physiscs at MFF UK in second grade.\\
+    2013 -- 2016&(Unfinished) Expelled after failing subject in sixth semester at FEL ČVUT.\\
 \end{tabular}
 
 \section*{Professional Experience}
 \begin{tabular}{L!{\VRule}R}
-4.2015 -- 6.2016 &{\bf Junior JAVA Developer at Certicon.}\\
-&Part time job during studies, mainly JAVA programming.\\[5pt]
-11.2016 -- today&{\bf Python developer at Optisolutions s.r.o.}\\
-&Mainly experienced with python, bash, linux, docker, Universal Robots programming,\\
-&Siemens TIA Portal programming and automation.\\
-&Beginner at Torch, ROS and PostgreSQL\\[5pt]
+    4.2015 -- 6.2016 &{\bf Junior JAVA Developer at Certicon.}\\
+    &Part time job during studies, mainly JAVA programming.\\[5pt]
+    11.2016 -- today&{\bf Python developer at Optisolutions s.r.o.}\\
+    &Mainly experienced with Python, Bash, Linux, Docker, Universal Robots programming,\\
+    &Siemens TIA Portal programming and automation.\\
+    &Beginner at Torch, ROS and PostgreSQL\\[5pt]
 \end{tabular}
 
 \section*{Previous notable projects}
 \hfill\begin{minipage}{\dimexpr\textwidth-2em}
-Magic Eye preventative maintenance (\href{https://youtu.be/OJSRanzvh8g}{https://youtu.be/OJSRanzvh8g})\\
-Vision system for Production Cell 4.0 (\href{https://youtu.be/bp4fXCKxH9c}{https://youtu.be/bp4fXCKxH9c})\\
+    Magic Eye preventative maintenance (\href{https://youtu.be/OJSRanzvh8g}{https://youtu.be/OJSRanzvh8g})\\
+    Vision system for Production Cell 4.0 (\href{https://youtu.be/bp4fXCKxH9c}{https://youtu.be/bp4fXCKxH9c})\\
 \end{minipage}
 
 \section*{Languages}
 \begin{tabular}{L!{\VRule}R}
-Slovak&(mother tongue)\\
-English&Fluent (B2)\\
-German&Fluent (B2)\\
+    Slovak&mother tongue\\
+    Czech&self taught\\
+    English&B2\\
+    German&B1\\
 \end{tabular}
+
+\section*{Summary}
+\hfill\begin{minipage}{\dimexpr\textwidth-2em}
+    For tha past six years, I worked on many projects, from PLC programming, six-axis robot arm programming,\\
+    to designing the majority of a Python system running inference on an Edge PC. I prefer Python and the\\
+    Linux system, but several times during my current job, I had to switch to a new language/system\\
+    and produce results in a relatively short time.\\
+\end{minipage}
 
 \pagenumbering{gobble}
 
